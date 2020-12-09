@@ -6,6 +6,7 @@
 # end
 
 require 'sinatra/base'
+require './lib/player'
 # require 'rack'
 
 class Battle < Sinatra::Base
