@@ -8,7 +8,7 @@
 feature 'Entering names in form' do
   scenario 'two players can enter their names and see them' do
     sign_in_and_play
-    expect(page).to have_content "Cathal vs. Simon"
+    expect(page).to have_content "#{@player_1_name} vs. #{@player_2_name}"
   end
 
 

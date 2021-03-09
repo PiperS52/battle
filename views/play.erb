@@ -1,8 +1,17 @@
-<a href="/attack">Attack</a>
+
 
 <div>
-<%= @player_1_name %> vs. <%= @player_2_name %>
+<%= @game.player_1.name %> vs. <%= @game.player_2.name %> <br>
 </div>
 <div>
-<%= @player_2_name %>: 60HP
+<%= @game.player_1.name %>: <%= @game.player_1.hit_points %>HP <br>
 </div>
+<div>
+<%= @game.player_2.name %>: <%= @game.player_2.hit_points %>HP <br>
+<div>
+  <%= @game.current_turn.name %>'s turn <br>
+</div>
+
+<form action="/attack" method="post">
+  <input type="submit" value="Attack">
+</form>
