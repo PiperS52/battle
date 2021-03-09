@@ -56,3 +56,10 @@ Load the dependencies:
 ```
 $ bundle install
 ```
+
+Run the server:
+```
+$ rackup
+```
+
+Open the browser at http://localhost:9292/
